@@ -1,0 +1,9 @@
+module github.com/transnano/pulsargateway
+
+go 1.15
+
+require (
+	github.com/apache/pulsar-client-go v0.2.0
+	github.com/prometheus/client_golang v1.7.1
+	github.com/prometheus/common v0.14.0
+)
