@@ -18,7 +18,7 @@ builds:
     env:
       - CGO_ENABLED=0
 archives:
-  - name_template: '{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
+  - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
     replacements:
       darwin: darwin
       linux: linux
@@ -31,8 +31,7 @@ archives:
 release:
   prerelease: auto
 nfpms:
-  -
-    id: pulsargateway-nfpms
+  - id: pulsargateway-nfpms
     package_name: pulsargateway
     homepage: https://github.com/transnano/pulsargateway
     maintainer: Transnano <transnano.jp@gmail.com>
